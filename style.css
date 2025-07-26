@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/209845/pexels-photo-209845.jpeg'); 
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center; 
+
+}
+.container{
+    background:rgba(255, 255, 255, 0.186);
+     backdrop-filter: blur(2px);
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 10px; 
+    text-align: center;
+    box-shadow: #18181856; 
+
+   
+}
+.weather-box{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 28px;
+    
+}
+input{
+    border-radius: 5px;
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    font-size: medium;
+    margin: 10px;
+    background-color:rgba(240, 248, 255, 0.608);
+    font-size: 15px;
+    border: none;
+}
+button{
+    display: block;
+    background-color:rgb(134, 188, 212);
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    font-size: medium;
+    margin: 10px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    margin-left: 115px;
+    border: none;
+    
+}
+.current-weather{
+    padding: 2rem;
+    
+}
+.current-weather{
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.current-weather h2{
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+.current-weather .temp{
+    font-size:4rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.current-weather .description{
+    color: #666;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+
+}
+.current-weather .details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    color: #666;
+    font-size: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ddd;
+
+}
+.current-weather .details div{
+    padding: 0.5rem;
+    background: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
